@@ -1,35 +1,37 @@
 {
-  "name": "configurable-umd",
+  "name": "lazy-umd",
   "version": "0.0.1",
-  "description": "A utility function for wrapping a function as a UMD module that can receive a configuration object.",
+  "description": "A utility function for wrapping a function as a UMD module that can receive a configuration object",
   "main": "umd.js",
   "directories": {
-    "test": "tests"
+    "test": "test"
+  },
+  "dependencies": {
+    "bower": "^1.4.1"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "^1.9.17",
+    "requirejs": "^2.1.18",
+    "mocha": "^2.2.5"
   },
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rutledgepaulv/configurable-umd.git"
+    "url": "git+https://github.com/rutledgepaulv/lazy-umd.git"
   },
   "keywords": [
     "umd",
-    "amd",
-    "global",
-    "loader",
     "requirejs",
-    "config"
+    "amd"
   ],
   "author": "Paul Rutledge <paul.v.rutledge@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rutledgepaulv/configurable-umd/issues"
+    "url": "https://github.com/rutledgepaulv/lazy-umd/issues"
   },
-  "homepage": "https://github.com/rutledgepaulv/configurable-umd#readme",
-  "dependencies": {
-    "chai": "^3.0.0",
-    "mocha": "^2.2.5",
-    "requirejs": "^2.1.18"
-  }
+  "homepage": "https://github.com/rutledgepaulv/lazy-umd"
 }

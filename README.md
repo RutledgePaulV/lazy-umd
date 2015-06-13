@@ -1,8 +1,10 @@
+[![Build Status](https://travis-ci.org/RutledgePaulV/lazy-umd.svg)](https://travis-ci.org/RutledgePaulV/lazy-umd)
+
 ## Lazy UMD
 This is a javascript universal module definition wrapper. It allows you to specify
 just three straightforward things and automatically get a wrapped up module that can
-be used either in the browser or with requirejs all while maintaing the ability to
-override dependencies with custom versions or aliased versions and also mtaining the
+be used either in the browser or with requirejs all while maintaining the ability to
+override dependencies with custom versions or aliased versions and also maintaining the
 ability to specify settings (via a plain object when using as a global and as requirejs
 module configuration when using requirejs.)
 
@@ -22,7 +24,7 @@ module configuration when using requirejs.)
 		]
 	}
 
-	return UMD(BrowserGlobalName, defaults, function(settings, jquery) {
+	return Universal(BrowserGlobalName, defaults, function(settings, jquery) {
 
 		var ColorIt = function(thingToColor) {
 			$(thingToColor).style({'color': settings.color);

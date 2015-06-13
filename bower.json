@@ -1,0 +1,31 @@
+{
+  "name": "configurable-umd",
+  "version": "0.0.1",
+  "authors": [
+    "Paul Rutledge <paul.v.rutledge@gmail.com>"
+  ],
+  "description": "A utility function for wrapping a function as a UMD module that can receive a configuration object.",
+  "main": "umd.js",
+  "keywords": [
+    "umd",
+    "amd",
+    "global",
+    "loader",
+    "requirejs",
+    "config"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rutledgepaulv/configurable-umd",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "handlebars": "~3.0.3",
+    "requirejs-promise": "~1.2.0"
+  }
+}

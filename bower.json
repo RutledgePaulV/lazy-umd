@@ -1,5 +1,5 @@
 {
-  "name": "configurable-umd",
+  "name": "lazy-umd",
   "version": "0.0.1",
   "authors": [
     "Paul Rutledge <paul.v.rutledge@gmail.com>"
@@ -15,7 +15,7 @@
     "config"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/rutledgepaulv/configurable-umd",
+  "homepage": "https://github.com/rutledgepaulv/lazy-umd",
   "ignore": [
     "**/.*",
     "node_modules",

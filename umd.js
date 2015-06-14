@@ -139,7 +139,7 @@
 
 			return define(['module'], function (module) {
 				var config = module.config();
-
+				config = config || {};
 				var overrides = config.dependencies || [];
 				var actualDeps = mergeDependencyDefinitionsForRequire(overrides);
 
@@ -179,6 +179,7 @@
 		 */
 		var loadViaGlobals = function () {
 			return function (settings) {
+				settings = settings || {};
 				var overrides = settings.dependencies || [];
 				var args = mergeDependencyDefinitionsForGlobals(overrides);
 				args.unshift(mergeSettings(settings));

@@ -8,11 +8,11 @@
 	var Defaults = {
 		name: 'TESTING',
 		other: 'TESTING_AGAIN',
-		dependencies: [
-			{name: 'jquery', reference: 'jQuery'},
-			{name: 'handlebars', reference: 'Handlebars'},
-			{name: 'castles', reference: 'castles'}
-		]
+		dependencies: {
+			jquery: 'jQuery',
+			handlebars: 'Handlebars',
+			castles: 'castles'
+		}
 	};
 
 	var Module = function (settings, $, handlebars, castles) {

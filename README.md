@@ -14,9 +14,11 @@ module configuration when using requirejs.)
 // ColorModule.js
 (function() {
 
-	// if we were doing browser globals, it's init function would be: window.MyModule
+	// if we were doing browser globals, it's init function would be: window.ColorItBuilder
 	var BrowserGlobalName = "ColorItBuilder";
 
+	// the default settings for the initialization. can be overriden with an object passed it
+	// when using global initialization, or can be defined as module config when using requirejs
 	var defaults = {
 		color: 'red'
 		dependencies: [
